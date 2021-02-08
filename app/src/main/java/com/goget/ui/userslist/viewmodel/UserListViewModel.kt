@@ -23,10 +23,23 @@ class UserListViewModel(private val compositeDisposable : CompositeDisposable, p
 
     val isLoading = ObservableField(true)
     val isError = ObservableField(false)
+    val isDeleteDialogVisible = ObservableField(false)
 
     val usersPage = ObservableField<UsersPage>()
     val longClicks =  PublishSubject.create<User>()
 
+    var userToDelete : User? = null
+
+
+    init {
+        longClicks.observeOn(AndroidSchedulers.mainThread())
+            .subscribe({
+                userToDelete = it
+                showDeleteUserDialog()
+            }, {
+                Timber.e(it)
+            })
+    }
 
     @OnLifecycleEvent(Lifecycle.Event.ON_START)
     fun loadData() {
@@ -71,14 +84,28 @@ class UserListViewModel(private val compositeDisposable : CompositeDisposable, p
     }
 
 
-    fun deleteUser(user : User) {
-        if(user.id != null) {
-            compositeDisposable += endpoint.deleteUser(user.id)
+    fun showDeleteUserDialog() {
+        isDeleteDialogVisible.set(true)
+    }
+
+    fun hideDeleteUserDialog() {
+        isDeleteDialogVisible.set(false)
+        userToDelete = null
+    }
+
+    fun deleteUser() {
+        val id = userToDelete?.id
+        if(id != null) {
+            compositeDisposable += endpoint.deleteUser(id)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe({
                     val isSuccess = it.code == 204
 
+
+                    if(isSuccess) {
+                        loadData()
+                    }
 
                 }, {
                     Timber.e(it)
@@ -86,7 +113,7 @@ class UserListViewModel(private val compositeDisposable : CompositeDisposable, p
         } else {
             //fail
         }
-
+        hideDeleteUserDialog()
 
     }
 

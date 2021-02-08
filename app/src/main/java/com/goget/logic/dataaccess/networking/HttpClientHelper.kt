@@ -20,7 +20,7 @@ class HttpClientHelper(context: Context) {
     private val  headersForAllRequests = HashMap<String, String>()
 
     init {
-        headersForAllRequests["Authorization"] = "TOKEN"
+        headersForAllRequests["Authorization"] = "Bearer 4e425a4d78a2816841a105941d14a7cdfc20886cd1dc6f30eac3c9e0bd9e4c68"
     }
 
     init {

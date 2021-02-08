@@ -1,5 +1,6 @@
 package com.goget.ui.userslist.binding
 
+import android.view.View
 import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.goget.logic.dataaccess.model.User
@@ -21,5 +22,15 @@ fun bindAlbumList(
         val adapter = recyclerView.adapter as UsersListAdapter
         adapter.updateModel(it)
         adapter.notifyDataSetChanged()
+    }
+}
+
+
+@BindingAdapter("visibility")
+fun bindInvisibility(view: View, isVisible: Boolean) {
+    if (isVisible) {
+        view.visibility = View.VISIBLE
+    } else {
+        view.visibility = View.INVISIBLE
     }
 }
