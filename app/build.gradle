@@ -76,7 +76,6 @@ dependencies {
     implementation "com.squareup.okhttp3:logging-interceptor:$versions_logging_interceptor"
     implementation "com.squareup.retrofit2:converter-gson:$versions_converter_gson"
     implementation "com.squareup.retrofit2:adapter-rxjava2:$versions_adapter_rxjava2"
-    implementation "com.squareup.retrofit2:converter-simplexml:$versions_converter_xml"
 
     implementation "androidx.navigation:navigation-runtime:$versions_navigation"
     implementation "androidx.navigation:navigation-runtime-ktx:$versions_navigation"
