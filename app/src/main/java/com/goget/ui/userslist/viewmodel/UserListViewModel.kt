@@ -13,6 +13,7 @@ import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.rxkotlin.plusAssign
 import io.reactivex.schedulers.Schedulers
+import io.reactivex.subjects.PublishSubject
 import timber.log.Timber
 
 
@@ -24,6 +25,7 @@ class UserListViewModel(private val compositeDisposable : CompositeDisposable, p
     val isError = ObservableField(false)
 
     val usersPage = ObservableField<UsersPage>()
+    val longClicks =  PublishSubject.create<User>()
 
 
     @OnLifecycleEvent(Lifecycle.Event.ON_START)
