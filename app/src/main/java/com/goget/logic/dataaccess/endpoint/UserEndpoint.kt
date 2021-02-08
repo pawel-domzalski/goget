@@ -13,7 +13,7 @@ interface UserEndpoint {
     fun listUsers(@Query("page") page : Int): Single<UsersPage>
 
     @DELETE("users/{id}")
-    fun deleteUser(@Path("id") userId : Int): Single<ResponseCode>
+    fun deleteUser(@Path("id") userId : Long): Single<ResponseCode>
 
     @POST("users")
     fun addUser(@Body user : UserBody): Single<ResponseCode>

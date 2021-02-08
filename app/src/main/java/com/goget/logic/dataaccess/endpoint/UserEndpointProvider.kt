@@ -15,7 +15,7 @@ class UserEndpointProvider : EndpointProvider<UserEndpoint> {
         return endpoint.listUsers(page)
     }
 
-    fun deleteUser(id : Int): Single<ResponseCode> {
+    fun deleteUser(id : Long): Single<ResponseCode> {
         return endpoint.deleteUser(id)
     }
 

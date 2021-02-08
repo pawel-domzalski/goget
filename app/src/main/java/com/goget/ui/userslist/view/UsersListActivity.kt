@@ -26,42 +26,6 @@ class UsersListActivity : DaggerAppCompatActivity() {
 
         lifecycle.addObserver(viewModel)
 
-
-//        val endpoint = UserEndpointProvider(HttpClientHelper(this))
-
-//        endpoint.listUsers(1)
-//            .subscribeOn(Schedulers.io())
-//            .observeOn(AndroidSchedulers.mainThread())
-//            .subscribe({
-//                    Log.i("qqq", "qqq ok= $it")
-//
-//            }, {
-//                Log.e("qqq", "qqq $it")
-//            })
-
-
-
-//        endpoint.addUser(UserBody("aaaassss", "Male", "uououo@opop.com", "Active"))
-//            .subscribeOn(Schedulers.io())
-//            .observeOn(AndroidSchedulers.mainThread())
-//            .subscribe({
-//                Log.i("qqq", "qqq ok= ${it.code}")
-//
-//            }, {
-//                Log.e("qqq", "qqq $it")
-//            })
-
-//
-//        endpoint.deleteUser(35)
-//            .subscribeOn(Schedulers.io())
-//            .observeOn(AndroidSchedulers.mainThread())
-//            .subscribe({
-//                Log.i("qqq", "qqq ok= ${it.code}")
-//
-//            }, {
-//                Log.e("qqq", "qqq $it")
-//            })
-
     }
 
 
