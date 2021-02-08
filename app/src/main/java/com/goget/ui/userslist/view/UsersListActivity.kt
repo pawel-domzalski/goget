@@ -1,24 +1,33 @@
-package com.goget
+package com.goget.ui.userslist.view
 
 import android.os.Bundle
-import android.util.Log
-import androidx.appcompat.app.AppCompatActivity
-import com.goget.logic.dataaccess.endpoint.UserEndpointProvider
-import com.goget.logic.dataaccess.model.UserBody
-import com.goget.logic.dataaccess.networking.HttpClientHelper
-import io.reactivex.android.schedulers.AndroidSchedulers
-import io.reactivex.schedulers.Schedulers
+import androidx.activity.viewModels
+import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.ViewModelProvider
+import com.goget.R
+import com.goget.databinding.ActivityUsersListBinding
+import com.goget.ui.userslist.viewmodel.UserListViewModel
+import dagger.android.support.DaggerAppCompatActivity
+import javax.inject.Inject
 
-class MainActivity : AppCompatActivity() {
+class UsersListActivity : DaggerAppCompatActivity() {
+
+    @Inject
+    lateinit var viewModelProviderFactory: ViewModelProvider.Factory
+
+    val viewModel: UserListViewModel by viewModels {viewModelProviderFactory}
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
 
+        val binding = DataBindingUtil.setContentView<ActivityUsersListBinding>(this, R.layout.activity_users_list)
+        binding.viewModel = viewModel
+
+        lifecycle.addObserver(viewModel)
 
 
-        val endpoint = UserEndpointProvider(HttpClientHelper(this))
+//        val endpoint = UserEndpointProvider(HttpClientHelper(this))
 
 //        endpoint.listUsers(1)
 //            .subscribeOn(Schedulers.io())

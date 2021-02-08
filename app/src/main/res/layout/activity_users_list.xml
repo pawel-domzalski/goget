@@ -8,7 +8,9 @@
 	<data>
 
 		<import type="android.view.View"/>
-
+		<variable
+			name="viewModel"
+			type="com.goget.ui.userslist.viewmodel.UserListViewModel" />
 
 
 	</data>
