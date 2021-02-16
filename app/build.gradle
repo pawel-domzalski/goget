@@ -95,6 +95,10 @@ dependencies {
     kapt "com.google.dagger:dagger-android-processor:$versions_dagger2"
     kapt "com.google.dagger:dagger-compiler:$versions_dagger2"
 
+    testImplementation "junit:junit:$versions_junit"
+    testImplementation "org.mockito:mockito-core:$versions_mockito_core"
+    testImplementation "com.nhaarman:mockito-kotlin:$versions_mockito_kotlin"
+
 
     implementation "androidx.multidex:multidex:$versions_multidex"
 }

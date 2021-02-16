@@ -1,0 +1,13 @@
+{
+  "code": 201,
+  "meta": null,
+  "data": {
+    "id": 1580,
+    "name": "Tena",
+    "email": "wwwww@15ce.com",
+    "gender": "Male",
+    "status": "Active",
+    "created_at": "2021-02-16T16:11:57.974+05:30",
+    "updated_at": "2021-02-16T16:11:57.974+05:30"
+  }
+}

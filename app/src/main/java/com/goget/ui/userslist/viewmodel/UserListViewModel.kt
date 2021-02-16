@@ -86,6 +86,7 @@ class UserListViewModel(private val compositeDisposable : CompositeDisposable, p
                 }
 
             }, {
+                isError.set(true)
                 Timber.e(it)
             })
         hideAddUserDialog()
@@ -124,6 +125,7 @@ class UserListViewModel(private val compositeDisposable : CompositeDisposable, p
                     }
 
                 }, {
+                    isError.set(true)
                     Timber.e(it)
                 })
         } else {

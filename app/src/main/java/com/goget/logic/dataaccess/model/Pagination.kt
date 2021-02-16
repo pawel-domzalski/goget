@@ -5,4 +5,4 @@ import kotlinx.android.parcel.Parcelize
 
 
 @Parcelize
-data class Pagination(val pages : Int?) : Parcelable
+data class Pagination(val page : Int?, val pages : Int?) : Parcelable

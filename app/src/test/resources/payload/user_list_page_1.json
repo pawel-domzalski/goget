@@ -1,0 +1,193 @@
+{
+  "code": 200,
+  "meta": {
+    "pagination": {
+      "total": 1504,
+      "pages": 76,
+      "page": 1,
+      "limit": 20
+    }
+  },
+  "data": [
+    {
+      "id": 13,
+      "name": "Varalakshmi Arora I",
+      "email": "arora_i_varalakshmi@abernathy-ledner.org",
+      "gender": "Male",
+      "status": "Active",
+      "created_at": "2021-02-16T03:50:03.990+05:30",
+      "updated_at": "2021-02-16T03:50:03.990+05:30"
+    },
+    {
+      "id": 16,
+      "name": "Max",
+      "email": "peff@gmail.com",
+      "gender": "Female",
+      "status": "Inactive",
+      "created_at": "2021-02-16T03:50:04.014+05:30",
+      "updated_at": "2021-02-16T16:06:01.149+05:30"
+    },
+    {
+      "id": 17,
+      "name": "Newkhannn",
+      "email": "newtest123@schuppe.io",
+      "gender": "Male",
+      "status": "Active",
+      "created_at": "2021-02-16T03:50:04.036+05:30",
+      "updated_at": "2021-02-16T15:50:01.606+05:30"
+    },
+    {
+      "id": 18,
+      "name": "Prof. Saraswati Ahluwalia",
+      "email": "ahluwalia_prof_saraswati@harber-gusikowski.info",
+      "gender": "Male",
+      "status": "Active",
+      "created_at": "2021-02-16T03:50:04.048+05:30",
+      "updated_at": "2021-02-16T03:50:04.048+05:30"
+    },
+    {
+      "id": 21,
+      "name": "Ananda Kaniyar",
+      "email": "kaniyar_ananda@bashirian-yundt.com",
+      "gender": "Female",
+      "status": "Inactive",
+      "created_at": "2021-02-16T03:50:04.099+05:30",
+      "updated_at": "2021-02-16T03:50:04.099+05:30"
+    },
+    {
+      "id": 23,
+      "name": "Rahul Kaur LLD",
+      "email": "rahul_lld_kaur@bayer.info",
+      "gender": "Male",
+      "status": "Active",
+      "created_at": "2021-02-16T03:50:04.139+05:30",
+      "updated_at": "2021-02-16T03:50:04.139+05:30"
+    },
+    {
+      "id": 24,
+      "name": "Tanushri Sharma DC",
+      "email": "tanushri_dc_sharma@schmitt-treutel.name",
+      "gender": "Female",
+      "status": "Inactive",
+      "created_at": "2021-02-16T03:50:04.156+05:30",
+      "updated_at": "2021-02-16T03:50:04.156+05:30"
+    },
+    {
+      "id": 25,
+      "name": "Opalina Deshpande",
+      "email": "opalina_deshpande@monahan-casper.name",
+      "gender": "Male",
+      "status": "Inactive",
+      "created_at": "2021-02-16T03:50:04.171+05:30",
+      "updated_at": "2021-02-16T03:50:04.171+05:30"
+    },
+    {
+      "id": 26,
+      "name": "Washington Luis Cabral da Silva",
+      "email": "wluissilva@live.com",
+      "gender": "Male",
+      "status": "Active",
+      "created_at": "2021-02-16T03:50:04.189+05:30",
+      "updated_at": "2021-02-16T08:32:44.993+05:30"
+    },
+    {
+      "id": 27,
+      "name": "Bala Patil",
+      "email": "patil_bala@maggio.name",
+      "gender": "Male",
+      "status": "Inactive",
+      "created_at": "2021-02-16T03:50:04.204+05:30",
+      "updated_at": "2021-02-16T03:50:04.204+05:30"
+    },
+    {
+      "id": 28,
+      "name": "Poornima Kapoor",
+      "email": "poornima_kapoor@hettinger.net",
+      "gender": "Female",
+      "status": "Inactive",
+      "created_at": "2021-02-16T03:50:04.210+05:30",
+      "updated_at": "2021-02-16T03:50:04.210+05:30"
+    },
+    {
+      "id": 29,
+      "name": "Dr. Ramesh Kaur",
+      "email": "kaur_ramesh_dr@beatty-schuster.org",
+      "gender": "Female",
+      "status": "Inactive",
+      "created_at": "2021-02-16T03:50:04.232+05:30",
+      "updated_at": "2021-02-16T03:50:04.232+05:30"
+    },
+    {
+      "id": 30,
+      "name": "Avadhesh Saini",
+      "email": "saini_avadhesh@wisoky.biz",
+      "gender": "Female",
+      "status": "Inactive",
+      "created_at": "2021-02-16T03:50:04.256+05:30",
+      "updated_at": "2021-02-16T03:50:04.256+05:30"
+    },
+    {
+      "id": 31,
+      "name": "Chandni Gill Esq.",
+      "email": "chandni_esq_gill@bartoletti-bechtelar.info",
+      "gender": "Male",
+      "status": "Inactive",
+      "created_at": "2021-02-16T03:50:04.292+05:30",
+      "updated_at": "2021-02-16T03:50:04.292+05:30"
+    },
+    {
+      "id": 32,
+      "name": "Kannan Talwar V",
+      "email": "v_kannan_talwar@feeney-predovic.com",
+      "gender": "Female",
+      "status": "Inactive",
+      "created_at": "2021-02-16T03:50:04.315+05:30",
+      "updated_at": "2021-02-16T03:50:04.315+05:30"
+    },
+    {
+      "id": 33,
+      "name": "Sen. Atmananda Reddy",
+      "email": "atmananda_reddy_sen@mckenzie.info",
+      "gender": "Male",
+      "status": "Active",
+      "created_at": "2021-02-16T03:50:04.326+05:30",
+      "updated_at": "2021-02-16T03:50:04.326+05:30"
+    },
+    {
+      "id": 36,
+      "name": "Dinkar Gupta",
+      "email": "dinkar_gupta@kemmer-frami.biz",
+      "gender": "Male",
+      "status": "Inactive",
+      "created_at": "2021-02-16T03:50:04.371+05:30",
+      "updated_at": "2021-02-16T03:50:04.371+05:30"
+    },
+    {
+      "id": 37,
+      "name": "Rep. Chandraketu Somayaji",
+      "email": "rep_somayaji_chandraketu@lemke-padberg.com",
+      "gender": "Female",
+      "status": "Inactive",
+      "created_at": "2021-02-16T03:50:04.374+05:30",
+      "updated_at": "2021-02-16T03:50:04.374+05:30"
+    },
+    {
+      "id": 38,
+      "name": "Akshainie Panicker",
+      "email": "akshainie_panicker@cormier-gutkowski.co",
+      "gender": "Male",
+      "status": "Active",
+      "created_at": "2021-02-16T03:50:04.384+05:30",
+      "updated_at": "2021-02-16T03:50:04.384+05:30"
+    },
+    {
+      "id": 39,
+      "name": "Gita Trivedi",
+      "email": "gita_trivedi@hyatt.name",
+      "gender": "Male",
+      "status": "Inactive",
+      "created_at": "2021-02-16T03:50:04.403+05:30",
+      "updated_at": "2021-02-16T03:50:04.403+05:30"
+    }
+  ]
+}
